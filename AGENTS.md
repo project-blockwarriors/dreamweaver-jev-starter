@@ -1,6 +1,6 @@
 # Jev contender
 
-Read `README.md`. This is a dependency-free Node 24 bot, using `dreamweaver.v2`.
+Read `README.md`. This is a dependency-free Node 24 bot, using `dreamweaver.v4`.
 
 - Read observations and model responses from stdin. Write only protocol JSON lines to stdout.
 - Send diagnostics to stderr. Do not put provider or organizer credentials in this repository.

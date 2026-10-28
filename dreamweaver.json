@@ -1,1 +1,1 @@
-{"protocol":"dreamweaver.v2","runtime":"node24","entrypoint":"bot.ts","name":"Jev tactician"}
+{ "protocol": "dreamweaver.v4", "runtime": "node24", "entrypoint": "bot.ts", "name": "Jev tactician" }
