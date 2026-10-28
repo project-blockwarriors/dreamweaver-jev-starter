@@ -8,6 +8,8 @@ No API key belongs in your bot. Model requests go to the organizer broker throug
 
 `bot.ts` is the transport loop. `tactical.ts` is yours to change: write different prompts, replace pathfinding, add memory, invent tactics, or use your own controller. The available tactics are a reference policy, not a restriction imposed on competitors. The underlying action interface still allows direct cardinal movement and all five abilities.
 
-Rules: collect at the four resource nodes, carry up to three crystals, and stand still at the beacon for 12 ticks to bank them. Each crystal earns 10 points, or 15 during the final six seconds of each 20-second beacon phase. Disrupt interrupts and pushes, Ward protects, and temporary walls block pulses. A knockout drops cargo for either bot to recover. The next beacon is announced five seconds before it moves. All times use 20 ticks per second.
+Rules: gather crystals from outer sources or the two-crystal core, carry up to three, and bank at the fixed shrine at (12,8). Hold still and activate slot 1 for 24 ticks (1.2 seconds). One/two/three crystals score 10/20/40. Disrupt charges for half a second, interrupts and spills cargo; Ward and walls protect you. Pickups do not score until banked. The hazard warns before damaging its column. See the [complete rules](https://github.com/project-blockwarriors/blockwarriors-dreamweaver-cmd/blob/main/docs/strategy-lab.md).
 
 The `seq` action number must increase. Observe `respawnUntil`, `recoveryUntil`, `depositUntil`, cooldowns and node `readyAt`. A model response includes `answers.tactic.choice` under `result`; see the policy for a complete request and response handler.
+
+The hosted event uses house trials. Check the workspace for the active protocol before importing; v4 targets the native strategy arena. Use hosted practice to verify physics and real model timing before selecting an entry. See the main repository’s participant and contributor guides.

@@ -1,1 +1,10 @@
-{"name":"dreamweaver-jev","private":true,"type":"module","version":"0.2.0"}
+{
+  "name": "dreamweaver-jev",
+  "private": true,
+  "type": "module",
+  "version": "0.2.0",
+  "scripts": {
+    "check": "node tools/check.mjs",
+    "doctor": "node tools/dreamweaver.ts doctor"
+  }
+}
